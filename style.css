@@ -1,49 +1,98 @@
+/* style.css */
+
+/* ------------------ */
+/* Estilos Gerais/Body */
+/* ------------------ */
+
 body {
-    background-color: #1D4221;
-    color: white;
-    font-family: "Bai Jamjuree", sans-serif;
+    font-family: 'Georgia', serif; /* Fonte clássica para contos de fadas */
+    background-color: #f0e6e6; /* Um rosa bem claro, quase branco, como a neve */
+    color: #333;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 700px;
-    margin: 0;
-}
-
-button {
-    background-color: #64A712;
-    color: white;
-    font-family: "Bai Jamjuree", sans-serif;
-}
-body {
-    background-color: #1D4221;
-    color: white;
-    font-family: "Bai Jamjuree", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 700px;
-    margin: 0;
-}
-
-button {
-    background-color: #64A712;
-    color: white;
-    font-family: "Bai Jamjuree", sans-serif;
-}
-
-.passo {
-    display: none;
-}
-
-.passo.ativo {
-    display:block;
+    min-height: 100vh;
+    padding: 20px;
 }
 
 main {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+    padding: 30px;
     text-align: center;
-    max-width: 90%;
 }
 
-img {
-    max-width: 90%;
+/* ------------------ */
+/* Estilos dos Passos (Conteúdo) */
+/* ------------------ */
+
+.passo {
+    /* Por padrão, todos os passos ficam ocultos */
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.passo.ativo {
+    /* Apenas o passo com a classe 'ativo' é exibido */
+    display: block;
+    opacity: 1;
+}
+
+.passo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 3px solid #b71c1c; /* Borda vermelha para remeter à maçã e aos lábios */
+}
+
+.passo p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* ------------------ */
+/* Estilos dos Botões */
+/* ------------------ */
+
+.btn-proximo {
+    background-color: #b71c1c; /* Vermelho vibrante */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.1s;
+    width: 100%;
+    max-width: 400px;
+    display: block; /* Garante que cada botão ocupe sua própria linha */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-proximo:hover {
+    background-color: #7f0000; /* Vermelho mais escuro no hover */
+    transform: translateY(-2px);
+}
+
+.btn-proximo:active {
+    transform: translateY(0);
+}
+
+/* ------------------ */
+/* Estilos Específicos para o Final (Se necessário) */
+/* ------------------ */
+
+#passo-11 p {
+    font-style: italic;
+    color: #004d40; /* Verde escuro para o final feliz */
+    font-size: 1.2em;
 }
