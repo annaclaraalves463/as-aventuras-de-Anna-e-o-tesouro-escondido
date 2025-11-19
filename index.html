@@ -1,90 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="Ilha.jpeg>
-    <title>Em busca da cidade perdida</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>A Aventura da Branca de Neve</title>
 </head>
 <body>
-    <main>
-        <div class="passo ativo" id="passo-0">
-            <img src="Ilha.jpeg" alt="">
-            <p>Um dia desses, dentro de um livro da biblioteca da escola, eu descobri uma carta antiga sobre uma cidade perdida, escondida por riquezas e belezas naturais. Nessa carta, a autora deixa algumas pistas para encontrar essa cidade e eu decidi segui-las!</p>
-            <button class="btn-proximo" data-proximo="1">Rio de Janeiro</button>
-            <button class="btn-proximo" data-proximo="2">Pernambuco</button>
-        </div>
-        <div class="passo" id="passo-1">
-            <p>Você começa sua jornada no Rio de Janeiro, subindo o Pico da Tijuca ao amanhecer para encontrar a primeira pista.</p>
-            <button class="btn-proximo" data-proximo="3">Procurar a pista no topo do pico</button>
-            <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
-        </div>
-        <div class="passo" id="passo-2">
-            <p>Em Pernambuco, você visita a histórica cidade de Olinda. Na carta, uma das pistas indica que para localizar a entrada para a cidade perdida você deve procurar a próxima pista em um dos pontos turísticos da cidade. Por qual você começa?</p>
-            <button class="btn-proximo" data-proximo="5">Investigar as igrejas antigas</button>
-            <button class="btn-proximo" data-proximo="6">Explorar as praias próximas</button>
-        </div>
-        <div class="passo" id="passo-3">
-            <p>No topo do Pico da Tijuca, você encontra uma antiga inscrição apontando que a próxima pista está
-                localizada no Amazonas.</p>
-            <button class="btn-proximo" data-proximo="7">Seguir para o Amazonas</button>
-        </div>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="Rainha-Ma.jpg" alt="A Rainha Má e seu espelho">
+            <p>Branca de Neve, com a pele como a neve, lábios como o sangue e cabelos como o ébano, vivia sob a crueldade de sua madrasta, a Rainha Má. Um dia, o espelho mágico revelou que Branca de Neve era a mais bela, e a Rainha, cheia de inveja, ordenou que um caçador a levasse para a floresta e a matasse. No entanto, o caçador teve pena e a libertou, dizendo para nunca mais voltar. Branca de Neve correu, perdida e assustada. Onde buscar refúgio?</p>
+            <button class="btn-proximo" data-proximo="1">Seguir um caminho de pedras na floresta</button>
+            <button class="btn-proximo" data-proximo="2">Esconder-se em uma caverna escura</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <img src="Casinha-Na-Floresta.jpg" alt="Pequena cabana na floresta">
+            <p>Você segue o caminho de pedras e, após horas de caminhada, encontra uma pequena e estranha cabana. Está tudo bagunçado lá dentro, mas parece seguro por enquanto. O que você decide fazer?</p>
+            <button class="btn-proximo" data-proximo="3">Limpar a casa e preparar uma refeição</button>
+            <button class="btn-proximo" data-proximo="4">Esperar pelos donos antes de tocar em algo</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>A caverna é fria e escura. Você ouve barulhos estranhos e percebe que animais selvagens estão se aproximando. Você precisa sair!</p>
+            <button class="btn-proximo" data-proximo="5">Tentar encontrar o caminho de volta para a luz</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Após limpar e cozinhar, você se sente exausta e adormece em uma das sete pequenas camas. Mais tarde, os sete anões chegam e ficam maravilhados com sua bondade. Eles a convidam para morar com eles, mas fazem um aviso: não abra a porta para ninguém.</p>
+            <button class="btn-proximo" data-proximo="6">Aceitar o convite e o aviso</button>
+        </div>
 
-        <div class="passo" id="passo-4">
-            <img src="uma-rapariga-esta-em-aventura_1178160-4453.avif" alt="imagem voltando para casa e desitindo da aventura">
-            <p>Você decide que a aventura é grande demais e volta para casa, mas sempre se pergunta o que teria
-                encontrado.</p>
-        </div>
+        <div class="passo" id="passo-4">
+            <p>Você espera, mas o dia escurece. Você está com fome e morrendo de frio. A porta se abre e os sete anões se assustam ao vê-la imóvel, suspeitando de um truque da Rainha. Eles a mandam embora, temendo por sua segurança.</p>
+            <button class="btn-proximo" data-proximo="7">Voltar para a floresta</button>
+        </div>
 
-        <div class="passo" id="passo-5">
-            <p>Nas igrejas de Olinda, você descobre um mapa antigo escondido atrás de um altar, apontando que a próxima
-                pista está no Amazonas.</p>
-            <button class="btn-proximo" data-proximo="7">Viajar para o Amazonas</button>
-        </div>
+        <div class="passo" id="passo-5">
+            <p>Correndo para fora da caverna, você encontra o caminho de pedras e, com sorte, a pequena cabana dos anões. Ela está bagunçada. Você precisa entrar e se proteger.</p>
+            <button class="btn-proximo" data-proximo="3">Limpar a casa e preparar uma refeição</button>
+        </div>
 
-        <div class="passo" id="passo-6">
-            <p>Explorando as praias, você encontra uma caverna escondida, mas ela leva a um beco sem saída.</p>
-            <button class="btn-proximo" data-proximo="8">Voltar e explorar as igrejas</button>
-        </div>
+        <div class="passo" id="passo-6">
+            <img src="Bruxa-Da-Maca.jpg" alt="A Bruxa (Rainha Má disfarçada) oferecendo a maçã">
+            <p>Você está feliz com os anões. Um dia, sozinha, você ouve uma batida. É uma velhinha simpática oferecendo uma linda maçã. Você se lembra do aviso, mas a velhinha parece inofensiva.</p>
+            <button class="btn-proximo" data-proximo="8">Aceitar a maçã da velhinha</button>
+            <button class="btn-proximo" data-proximo="9">Recusar e fechar a porta</button>
+        </div>
 
-        <div class="passo" id="passo-7">
-            <p>No Amazonas, a busca pela cidade perdida se intensifica. Você se depara com um rio bifurcado.</p>
-            <button class="btn-proximo" data-proximo="9">Seguir pelo rio à esquerda</button>
-            <button class="btn-proximo" data-proximo="10">Seguir pelo rio à direita</button>
-        </div>
+        <div class="passo" id="passo-7">
+            <p>Você vaga pela floresta e acaba se deparando com um urso. Sem refúgio, sua aventura termina tragicamente.</p>
+        </div>
 
-        <div class="passo" id="passo-8">
-            <p>De volta às igrejas, você finalmente encontra o mapa antigo. Agora, para o Amazonas!</p>
-            <button class="btn-proximo" data-proximo="7">Seguir para o Amazonas</button>
-        </div>
+        <div class="passo" id="passo-8">
+            <p>Ao morder a maçã, você cai em um sono profundo. Os anões a encontram e, pensando que está morta, a colocam em um caixão de cristal. Sua única esperança é um ato de amor verdadeiro.</p>
+            <button class="btn-proximo" data-proximo="10">Esperar pelo beijo do Príncipe</button>
+        </div>
 
-        <div class="passo" id="passo-9">
-            <p>O rio à esquerda leva você a uma cachoeira escondida com inscrições antigas que revelam a entrada da
-                cidade perdida.</p>
-            <button class="btn-proximo" data-proximo="11">Explorar a cidade perdida</button>
-        </div>
+        <div class="passo" id="passo-9">
+            <p>Você recusa e a velhinha se enfurece, revelando ser a Rainha Má. Ela tenta forçar a entrada, mas os anões voltam naquele momento e a perseguem, livrando o reino para sempre.</p>
+            <button class="btn-proximo" data-proximo="11">Final Feliz (Opção Anões)</button>
+        </div>
 
-        <div class="passo" id="passo-10">
-            <p>O rio à direita termina em uma área pantanosa. Apesar de belas vistas, não há sinais da cidade perdida
-                aqui.</p>
-            <button class="btn-proximo" data-proximo="12">Retornar e tentar o outro rio</button>
-        </div>
+        <div class="passo" id="passo-10">
+            <img src="Branca-De-Neve-E-Principe.jpg" alt="O Príncipe beijando Branca de Neve">
+            <p>Um Príncipe, que passava por ali, se encanta com sua beleza. Ao dar-lhe um beijo de amor verdadeiro, você acorda! O feitiço é quebrado.</p>
+            <button class="btn-proximo" data-proximo="11">Final Feliz (Opção Príncipe)</button>
+        </div>
 
-        <div class="passo" id="passo-11">
-            <img src="img/cenario-passo11-cidade-perdida.png" alt="encontrando uma cidade maravilhosa perdida no Amazonas">
-            <p>Dentro da cidade perdida, você descobre tesouros inimagináveis e decide se dedicar a estudar e preservar
-                este lugar</p>
-        </div>
-
-        <div class="passo" id="passo-12">
-            <p>Retornando e escolhendo o rio à esquerda, você finalmente encontra a cachoeira escondida e as inscrições
-                que levam à cidade perdida.</p>
-            <button class="btn-proximo" data-proximo="11">Explorar a cidade perdida</button>
-        </div>
-    </main>
-    <script src="script.js"></script>
+        <div class="passo" id="passo-11">
+            <p>Você se casa com o Príncipe (ou continua vivendo feliz com seus amigos anões), e o reino finalmente encontra a paz e a justiça. Sua bondade triunfou sobre a maldade!</p>
+        </div>
+    </main>
+    <script src="script.js"></script>                 
+</body>
+</html>
 </body>
 </html>
